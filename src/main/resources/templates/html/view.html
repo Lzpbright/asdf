@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>view</title>
+    <style>
+        #div1{
+            margin-left: 580px;
+            margin-right: 580px;
+            padding: 20px;
+            border: 2px solid gray;
+            box-shadow: 2px 2px 2px gray;
+        }
+        fieldset{
+            border: 1px solid lightblue;
+            border-radius: 0.3em;
+        }
+        legend{
+            color: lightblue;
+            font-family: 幼圆;
+        }
+        label{
+            font-family: 幼圆;
+        }
+        input{
+
+        }
+        input:focus{
+            background-color: lavender;
+
+        }
+        input:hover{
+            border-color:#40B8FA;
+        }
+        button{
+            margin-left: 100px;
+            border-color: lightblue;
+            background-color: lightblue;
+            border-radius: 0.5em;
+            font-family: 幼圆;
+
+        }
+        button:hover{
+            border-color: #6cb7cc;
+            background-color: #6cb7cc;
+            font-weight: bold;
+        }
+        hr{
+            height: 2px;
+            background-color: lightgray;
+            border: none;
+        }
+    </style>
+</head>
+<body>
+<div id="div1">
+    <fieldset>
+        <legend>登录</legend>
+        <form action="loginPage" method="post">
+            <table>
+                <tr>
+                    <td>
+                        <label for="account">账号：</label>
+                        <input type="text" id="account" name="account" />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="password">密码：</label>
+                        <input type="password" id="password" name="password" />
+                    </td>
+                </tr>
+                <tr>
+                    <td><button type="submit">登录</button></td>
+                </tr>
+            </table>
+        </form>
+    </fieldset>
+    <hr />
+    <fieldset>
+        <legend>注册</legend>
+        <form action="registerPage" method="post">
+            <table>
+                <tr>
+                    <td>
+                        <label for="account1">账号：</label>
+                        <input id="account1" name="account" type="text">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="name">名字：</label>
+                        <input id="name" name="name" type="text">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="password1">密码：</label>
+                        <input id="password1" name="password" type="password">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <button type="submit">注册</button>
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </fieldset>
+</div>
+</body>
+</html>
